@@ -9,6 +9,8 @@ import SwiftUI
 
 struct UISliderRepresentation: UIViewRepresentable {
     @Binding var value: Int
+    var minimumValue: Int
+    var maximumValue: Int
     
     func makeCoordinator() -> Coordinator {
         Coordinator(value: $value)
@@ -17,8 +19,8 @@ struct UISliderRepresentation: UIViewRepresentable {
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
         slider.sizeToFit()
-        slider.minimumValue = 1
-        slider.maximumValue = 100
+        slider.minimumValue = Float(minimumValue)
+        slider.maximumValue = Float(maximumValue)
         return slider
     }
     
@@ -29,17 +31,16 @@ struct UISliderRepresentation: UIViewRepresentable {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        UISliderRepresentation(value: .constant(1))
+        UISliderRepresentation(value: .constant(1), minimumValue: 1, maximumValue: 100)
     }
 }
 
 extension UISliderRepresentation {
-    class Coordinator: NSObject {
+    final class Coordinator: NSObject {
         @Binding var value: Int
         
         init(value: Binding<Int>) {
             self._value = value
         }
-        
     }
 }

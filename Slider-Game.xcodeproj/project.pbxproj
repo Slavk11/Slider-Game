@@ -13,6 +13,7 @@
 		79E5E4DB2A40D9F5002B9AF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E5E4DA2A40D9F5002B9AF4 /* Preview Assets.xcassets */; };
 		79E5E4E22A40DA19002B9AF4 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4E12A40DA19002B9AF4 /* UISliderRepresentation.swift */; };
 		79E5E4E42A40DB95002B9AF4 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4E32A40DB95002B9AF4 /* SliderView.swift */; };
+		79E5E4E62A40DC36002B9AF4 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5E4E52A40DC36002B9AF4 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		79E5E4DA2A40D9F5002B9AF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79E5E4E12A40DA19002B9AF4 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 		79E5E4E32A40DB95002B9AF4 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		79E5E4E52A40DC36002B9AF4 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				79E5E4D52A40D9F4002B9AF4 /* ContentView.swift */,
 				79E5E4E12A40DA19002B9AF4 /* UISliderRepresentation.swift */,
 				79E5E4E32A40DB95002B9AF4 /* SliderView.swift */,
+				79E5E4E52A40DC36002B9AF4 /* ButtonView.swift */,
 				79E5E4D72A40D9F5002B9AF4 /* Assets.xcassets */,
 				79E5E4D92A40D9F5002B9AF4 /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			files = (
 				79E5E4D62A40D9F4002B9AF4 /* ContentView.swift in Sources */,
 				79E5E4E42A40DB95002B9AF4 /* SliderView.swift in Sources */,
+				79E5E4E62A40DC36002B9AF4 /* ButtonView.swift in Sources */,
 				79E5E4D42A40D9F4002B9AF4 /* Slider_GameApp.swift in Sources */,
 				79E5E4E22A40DA19002B9AF4 /* UISliderRepresentation.swift in Sources */,
 			);
