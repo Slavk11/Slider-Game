@@ -18,7 +18,6 @@ struct ContentView: View {
             
             SliderView(value: $value, targetValue: $targetValue)
                 
-            
             ButtonView(text: "Проверь меня!") {
                 showAlert.toggle()
             }
