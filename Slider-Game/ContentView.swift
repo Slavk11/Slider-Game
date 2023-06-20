@@ -15,18 +15,20 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
+            
             SliderView(value: $value, targetValue: $targetValue)
             
-            ButtonView(text: "Проверь меня!", action: {
+            ButtonView(text: "Проверь меня!") {
                 showAlert.toggle()
-            })
+            }
             .padding(.bottom, 10)
             .alert(isPresented: $showAlert) {
                 checkResult(value: value, targetValue: targetValue)
             }
-            ButtonView(text: "Начать заново", action: {
+            
+            ButtonView(text: "Начать заново") {
                 randomizeTargetValue(targetValue: &targetValue, value: &value)
-            })
+            }
         }
         .padding()
     }
