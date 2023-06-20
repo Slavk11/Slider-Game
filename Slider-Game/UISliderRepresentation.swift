@@ -21,6 +21,8 @@ struct UISliderRepresentation: UIViewRepresentable {
         slider.sizeToFit()
         slider.minimumValue = Float(minimumValue)
         slider.maximumValue = Float(maximumValue)
+        slider.value = Float(value)
+        slider.addTarget(context.coordinator, action: #selector(Coordinator.sliderValueChanged(_:)), for: .valueChanged)
         return slider
     }
     
@@ -42,5 +44,10 @@ extension UISliderRepresentation {
         init(value: Binding<Int>) {
             self._value = value
         }
+        
+        @objc func sliderValueChanged(_ sender: UISlider) {
+            self.value = Int(sender.value)
+        }
+        
     }
 }
