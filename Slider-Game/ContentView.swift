@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var value = 1
+    @State var value = 0
     @State var targetValue = Int.random(in: 0...100)
+    @State private var showAlert = false
     
     var body: some View {
         VStack {
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
             SliderView(value: $value, targetValue: $targetValue)
             
-            ButtonView(text: "Проверь меня!", action: {})
-                .padding(.bottom, 10)
-            ButtonView(text: "Начать заново", action: {})
+            ButtonView(text: "Проверь меня!", action: {
+                showAlert.toggle()
+            })
+            .padding(.bottom, 10)
+            .alert(isPresented: $showAlert) {
+                checkResult(value: value, targetValue: targetValue)
+            }
+            ButtonView(text: "Начать заново", action: {
+                randomizeTargetValue(targetValue: &targetValue, value: &value)
+            })
         }
         .padding()
     }
