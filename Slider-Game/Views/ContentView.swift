@@ -17,6 +17,7 @@ struct ContentView: View {
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
             
             SliderView(value: $value, targetValue: $targetValue)
+                
             
             ButtonView(text: "Проверь меня!") {
                 showAlert.toggle()

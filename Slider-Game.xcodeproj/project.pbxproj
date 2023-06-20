@@ -60,12 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				79E5E4D32A40D9F4002B9AF4 /* Slider_GameApp.swift */,
-				79E5E4D52A40D9F4002B9AF4 /* ContentView.swift */,
-				79E5E4E12A40DA19002B9AF4 /* UISliderRepresentation.swift */,
-				79E5E4E32A40DB95002B9AF4 /* SliderView.swift */,
-				79E5E4E72A421796002B9AF4 /* GameLogic.swift */,
-				79E5E4E52A40DC36002B9AF4 /* ButtonView.swift */,
-				79E5E4D72A40D9F5002B9AF4 /* Assets.xcassets */,
+				79E5E4EB2A4227F6002B9AF4 /* Views */,
+				79E5E4EC2A422851002B9AF4 /* Services */,
+				79E5E4ED2A4228D5002B9AF4 /* Resources */,
 				79E5E4D92A40D9F5002B9AF4 /* Preview Content */,
 			);
 			path = "Slider-Game";
@@ -77,6 +74,33 @@
 				79E5E4DA2A40D9F5002B9AF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79E5E4EB2A4227F6002B9AF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E5E4D52A40D9F4002B9AF4 /* ContentView.swift */,
+				79E5E4E32A40DB95002B9AF4 /* SliderView.swift */,
+				79E5E4E52A40DC36002B9AF4 /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79E5E4EC2A422851002B9AF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79E5E4E12A40DA19002B9AF4 /* UISliderRepresentation.swift */,
+				79E5E4E72A421796002B9AF4 /* GameLogic.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79E5E4ED2A4228D5002B9AF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79E5E4D72A40D9F5002B9AF4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
